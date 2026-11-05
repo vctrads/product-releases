@@ -4,11 +4,11 @@
         <title>Dlock</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 05 Nov 2026 23:19:23 +0400</pubDate>
-            <sparkle:version>5</sparkle:version>
+            <pubDate>Thu, 05 Nov 2026 23:28:08 +0400</pubDate>
+            <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.0/Dlock-1.0.0-build5.zip" length="5623833" type="application/octet-stream" sparkle:edSignature="CKRp/hEJ+CONSDhwkUWfAL4caNwqs5oI5ztppfs9yTx1Pclqg4aVhjHcHThgnSwnp8/Cklm7Q/iJTXevpqW2Dg=="/>
+            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.0/Dlock-1.0.0-build6.zip" length="5624373" type="application/octet-stream" sparkle:edSignature="HAqhNbOn5mxHUqJ7WcRlL12LYFjFSQZ84MAkjTRwkkEYNYlqXZjpDf3qxf/wNgTX56GynNmdf9LCMPvGcBrgDA=="/>
         </item>
     </channel>
 </rss>
