@@ -1,14 +1,91 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Dlock</title>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Tue, 10 Nov 2026 16:06:32 +0400</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;line-height:1.55}h1{font-size:23px}h2{font-size:17px;margin-top:24px}li{margin-bottom:6px}</style>
+<h1>Dlock 1.0.1</h1>
+<p>Version 1.0.1 · Build 15 · November 10, 2026</p>
+<p>This update adds clearer feedback while Dlock moves your Dock, protects placement from accidental input, and introduces an opt-in workaround for keeping a side Dock on a chosen display. It also brings profile, reconnect, notification, and automation improvements introduced since version 1.0.0 build 7.</p>
+<h2>A clearer experience while moving the Dock</h2>
+<ul>
+<li>A full-screen processing overlay now makes it clear when a Dock move is in progress.</li>
+<li>Each connected display uses its own desktop wallpaper as the source of the overlay&#x27;s colors.</li>
+<li>A soft, full-screen blur, enlarged wallpaper crop, and subtle dark veil keep the processing message readable.</li>
+<li>The new Quiet focus layout uses a centered app icon and message without an enclosing card.</li>
+<li>A smaller heading keeps the screen calm and leaves more space around the content.</li>
+<li>The app icon is resolved by macOS from Dlock&#x27;s bundled icon instead of using a fixed exported image.</li>
+<li>The icon follows the application&#x27;s system appearance independently of the overlay&#x27;s dark background.</li>
+<li>A nine-dot circular activity indicator animates in a chevron wave while work continues.</li>
+<li>Shimmering status text distinguishes preparation, movement, and placement verification.</li>
+<li>An elapsed timer shows how long the current move has been running, synchronized across displays.</li>
+<li>Reduce Motion keeps the activity dots and status text static while the timer continues to update.</li>
+</ul>
+<h2>Placement that tolerates accidental input</h2>
+<ul>
+<li>Incidental pointer movement no longer cancels an app-initiated Dock move while the processing shield is active.</li>
+<li>Pointer clicks, scrolling, and ordinary keyboard actions are briefly suppressed during protected placement so they do not act on an unintended target.</li>
+<li>Dlock&#x27;s own marked placement events continue to reach the system Dock.</li>
+<li>Press Escape to request cancellation and let Dlock finish its cleanup safely.</li>
+<li>Command–Option–Escape remains available during protected placement.</li>
+<li>An independent 12-second timeout releases the processing shield if a placement stops returning normally.</li>
+<li>Placement waits for the initiating mouse click to finish before protecting input.</li>
+<li>Overlay windows are removed on completion and cancellation, including when a display-change callback was already queued.</li>
+<li>Temporary auto-hide shortcuts are marked as Dlock events so the input shield does not block its own cleanup.</li>
+</ul>
+<h2>Optional Side Dock Mode</h2>
+<ul>
+<li>Added a session-only, opt-in workaround for Left and Right Dock placement on a selected display.</li>
+<li>Side Dock Mode temporarily makes the selected display the main display while retaining the monitors&#x27; relative positions.</li>
+<li>Dlock checks the observed Dock location before reporting that placement succeeded.</li>
+<li>The original configuration is recorded before a display change so recovery can be attempted after an interrupted operation.</li>
+<li>Original display setup restoration is available when leaving the mode, unlocking, selecting Bottom, quitting, or recovering from a failed move.</li>
+<li>Settings includes Restore Original Display Setup and a way to keep the current setup when recovery needs a decision.</li>
+<li>Recovery checks for user layout changes and disconnected or changed displays before restoring a saved configuration.</li>
+</ul>
+<p>Side Dock Mode changes which screen is the main display. macOS still controls side-Dock placement, and some interior or covered edges cannot host it. The workaround has been exercised on the connected built-in/HP E233 setup; behavior across every display arrangement is not claimed.</p>
+<h2>Profiles, reconnects, and controls</h2>
+<ul>
+<li>Added a configurable fallback-display policy for when the preferred display disconnects.</li>
+<li>Improved setup-aware profile restoration for matching connected-display sets.</li>
+<li>Added profile archive support for importing and exporting saved setups.</li>
+<li>Improved restoration of Dock preferences associated with a saved profile.</li>
+<li>Simplified the visible Dock lock controls around the supported size-lock workflow.</li>
+<li>Added more explicit restoration and reconnect feedback so users can understand the current preferred and observed display state.</li>
+</ul>
+<h2>Notifications and automation</h2>
+<ul>
+<li>Routed Dock feedback through native macOS notifications.</li>
+<li>Added distinct status symbols and colors for success, warning, and error feedback.</li>
+<li>Added native Shortcuts actions for opening controls, changing the display lock, setting the Dock edge or auto-hide, applying saved profiles, and supported Dock-setting locks.</li>
+<li>Added a Dock automation request path with input validation and clear failure responses.</li>
+</ul>
+<h2>Compatibility and update information</h2>
+<ul>
+<li>Requires macOS 13 or later. Accessibility access is required for Dock protection and placement.</li>
+<li>The release includes Apple silicon and Intel builds. Intel runtime behavior has not been separately verified.</li>
+<li>The update is signed with the existing Sparkle update key so current installations can verify it.</li>
+<li>Display reconnect, sleep/wake, permissions, login behavior, and every possible multi-display arrangement have not all been revalidated for this release.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.1/Dlock-1.0.1.zip" length="5886240" type="application/octet-stream" sparkle:edSignature="NRk67Zc96rYQh0cXsvnbLUGrO2GdA9rGozpw1s8BMQIVlCSwUyMXGCRHuPcpvtzBwQj+HuMnjGGxcerDbIglAg=="></enclosure>
+        </item>
+    <item>
             <title>1.0.0</title>
             <pubDate>Fri, 06 Nov 2026 17:01:39 +0400</pubDate>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.0/Dlock-1.0.0-build7.zip" length="5635638" type="application/octet-stream" sparkle:edSignature="eimV55bN63VK5bgdLaztlEgyq0EjDVBflKQA33HlRvV9kCz3yC/nFtfglUiVkgTzKSzGEwWfcH8hdMNjrpoQAA=="/>
+            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.0/Dlock-1.0.0-build7.zip" length="5635638" type="application/octet-stream" sparkle:edSignature="eimV55bN63VK5bgdLaztlEgyq0EjDVBflKQA33HlRvV9kCz3yC/nFtfglUiVkgTzKSzGEwWfcH8hdMNjrpoQAA=="></enclosure>
         </item>
     </channel>
-</rss>
+</rss><!-- sparkle-signatures:
+edSignature: ZaCIcrhHoFzuqPhJKjdI9BMtXQGbIxx11bt1iWg4SFweP01ebouBWYA1ylLQBxkq5DcvxPkxHfVCvncxKiFACQ==
+length: 7435
+-->
