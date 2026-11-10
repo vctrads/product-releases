@@ -1,8 +1,42 @@
-<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?>
+<!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
---><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Dlock</title>
+        <item>
+            <title>1.0.2</title>
+            <pubDate>Tue, 10 Nov 2026 22:00:31 +0400</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;line-height:1.55}h1{font-size:23px}h2{font-size:17px;margin-top:24px}li{margin-bottom:6px}</style>
+<h1>Dlock 1.0.2</h1>
+<p>Version 1.0.2 · Build 16 · November 10, 2026</p>
+<p>This update lines up the Side Dock Mode caption in the menu and removes the running timer from the blurred screen shown while your Dock moves. It includes the changes since version 1.0.1 build 15.</p>
+<h2>Side Dock Mode</h2>
+<ul>
+<li>The sentence under the Side Dock Mode switch now starts at the same left edge as the other labels in the menu.</li>
+<li>That sentence still reads "Uses the chosen display as the main display."</li>
+</ul>
+<p>Side Dock Mode works the same way. It is still optional, and macOS still decides where a side Dock can sit.</p>
+<h2>While your Dock moves</h2>
+<ul>
+<li>The blurred screen still appears while Dlock moves your Dock.</li>
+<li>The running timer next to the status line is no longer shown.</li>
+<li>The app icon, the "Moving your Dock" message, the display name, the activity dots, and the status line stay on that screen.</li>
+</ul>
+<p>The timer was only a clock. The screen still goes away when the move finishes, when you press Escape, or if a move stops responding. That last case is still the existing 12-second cutoff.</p>
+<h2>Compatibility and update information</h2>
+<ul>
+<li>Requires macOS 13 or later. Accessibility access is required for Dock protection and placement.</li>
+<li>The release includes Apple silicon and Intel builds.</li>
+<li>The update is signed with the existing Sparkle update key so current installations can verify it.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.2/Dlock-1.0.2.zip" length="5816457" type="application/octet-stream" sparkle:edSignature="gmC8srwOvrlgsAMIUsX0C/jhO6v8btxrbOqzgIW0Y65/9+EcMtcfIjnT8p8Fu15OcDYsai7gh+ecQ3rR8qGJCA=="/>
+        </item>
         <item>
             <title>1.0.1</title>
             <pubDate>Tue, 10 Nov 2026 16:06:32 +0400</pubDate>
@@ -74,18 +108,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
 <li>Display reconnect, sleep/wake, permissions, login behavior, and every possible multi-display arrangement have not all been revalidated for this release.</li>
 </ul>
 ]]></description>
-            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.1/Dlock-1.0.1.zip" length="5886240" type="application/octet-stream" sparkle:edSignature="NRk67Zc96rYQh0cXsvnbLUGrO2GdA9rGozpw1s8BMQIVlCSwUyMXGCRHuPcpvtzBwQj+HuMnjGGxcerDbIglAg=="></enclosure>
+            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.1/Dlock-1.0.1.zip" length="5886240" type="application/octet-stream" sparkle:edSignature="NRk67Zc96rYQh0cXsvnbLUGrO2GdA9rGozpw1s8BMQIVlCSwUyMXGCRHuPcpvtzBwQj+HuMnjGGxcerDbIglAg=="/>
         </item>
-    <item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Fri, 06 Nov 2026 17:01:39 +0400</pubDate>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.0/Dlock-1.0.0-build7.zip" length="5635638" type="application/octet-stream" sparkle:edSignature="eimV55bN63VK5bgdLaztlEgyq0EjDVBflKQA33HlRvV9kCz3yC/nFtfglUiVkgTzKSzGEwWfcH8hdMNjrpoQAA=="></enclosure>
+            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.0/Dlock-1.0.0-build7.zip" length="5635638" type="application/octet-stream" sparkle:edSignature="eimV55bN63VK5bgdLaztlEgyq0EjDVBflKQA33HlRvV9kCz3yC/nFtfglUiVkgTzKSzGEwWfcH8hdMNjrpoQAA=="/>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: ZaCIcrhHoFzuqPhJKjdI9BMtXQGbIxx11bt1iWg4SFweP01ebouBWYA1ylLQBxkq5DcvxPkxHfVCvncxKiFACQ==
-length: 7435
+</rss>
+<!-- sparkle-signatures:
+edSignature: 1hsUz6yT0VY+NbKQ0ljV8dNPPnb/+DFtRXLXjE4eAi/4SyX0SY7PbnRXZAYnrmwg49jgXVBTZCmCaids+6s8Bw==
+length: 9740
 -->
