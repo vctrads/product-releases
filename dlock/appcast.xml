@@ -6,6 +6,51 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Dlock</title>
         <item>
+            <title>1.0.3</title>
+            <pubDate>Wed, 18 Nov 2026 14:20:12 +0400</pubDate>
+            <sparkle:version>47</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;line-height:1.55}h1{font-size:23px}h2{font-size:17px;margin-top:24px}li{margin-bottom:6px}</style>
+<h1>Dlock 1.0.3</h1>
+<p>Version 1.0.3 · Build 47 · November 18, 2026</p>
+<p>This update adds automatic Side Dock Mode, remembered monitor setups, and clearer setup and recovery controls. It includes the changes since version 1.0.2 build 16.</p>
+<h2>Your monitors and Dock</h2>
+<ul>
+<li>Choosing Left or Right enables experimental Side Dock Mode after a one-time explanation and acceptance.</li>
+<li>When another display blocks a side edge, Dlock can temporarily adjust the virtual display arrangement and remap pointer crossings to follow your original layout.</li>
+<li>Dlock remembers your chosen display, Dock edge, Auto-hide setting, and an explicitly unlocked Dock for each connected monitor setup.</li>
+<li>Named Profiles remain available for presets you choose yourself.</li>
+<li>Placement errors stay visible with a Retry Placement action, and uncertain display recovery offers Restore or Keep choices.</li>
+</ul>
+<p>Side Dock Mode makes the selected monitor primary. Your physical monitors stay where they are, but macOS may move windows or the menu bar. Dlock restores the original arrangement when you choose Bottom, unlock the Dock, or quit, unless you have independently rearranged displays.</p>
+<h2>While your Dock moves</h2>
+<ul>
+<li>Each monitor shows a blurred version of its wallpaper with the animated placement loader.</li>
+<li>The loader stays visible through placement and fades out when placement finishes.</li>
+<li>Wallpaper recovery supports additional macOS wallpaper records and reuses that monitor&#x27;s cached artwork when available.</li>
+</ul>
+<p>Known limitations remain: the overlay can visibly resize during Side Dock switches between displays with different resolutions. Dynamic or video wallpapers without readable artwork may use a neutral background. Mirrored displays and layouts that cannot be safely planned are unsupported.</p>
+<h2>Setup and everyday controls</h2>
+<ul>
+<li>Replay onboarding from Settings while keeping your saved preferences.</li>
+<li>Enable Launch at Login from the final setup step or the suggestion after setup.</li>
+<li>Open What’s New from Settings to revisit recent changes.</li>
+<li>Dlock opens centered on the monitor where you click its menu-bar icon, and its dialogs follow that monitor.</li>
+<li>Display selection uses refreshed glass styling, and macOS Display Settings is available from Settings and by right-clicking the display diagram.</li>
+<li>Copy local diagnostic information from the Diagnostics dialog when troubleshooting.</li>
+</ul>
+<h2>Compatibility and update information</h2>
+<ul>
+<li>Requires macOS 13 or later. Accessibility access is required for Dock protection and placement.</li>
+<li>The release includes Apple silicon and Intel builds.</li>
+<li>The update is signed with the existing Sparkle update key so current installations can verify it.</li>
+<li>Automated offline release checks are run for this build; live Dock movement, mixed-resolution transitions, and wake/reconnect behavior are not rechecked for this release.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/vctrads/product-releases/releases/download/dlock-v1.0.3/Dlock-1.0.3.zip" length="6202778" type="application/octet-stream" sparkle:edSignature="62gnl+1Lup7O338t1tRH2Lz1VDfkHPoE0N6RIIWKpT7cZYRR5PqpH1I0YDQDwRXN1yZxy/fJvEUwygUmloN0DQ=="/>
+        </item>
+        <item>
             <title>1.0.2</title>
             <pubDate>Tue, 10 Nov 2026 22:00:31 +0400</pubDate>
             <sparkle:version>16</sparkle:version>
@@ -121,6 +166,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 1hsUz6yT0VY+NbKQ0ljV8dNPPnb/+DFtRXLXjE4eAi/4SyX0SY7PbnRXZAYnrmwg49jgXVBTZCmCaids+6s8Bw==
-length: 9740
+edSignature: f6ZSkBLUDztXi06OqCikRwWqCPWyODj9Vvy8bupekJLvuW+nYyBjWFGk0ufYCMlkmFA1TiW+36aLBjjUr6B8AA==
+length: 13616
 -->
